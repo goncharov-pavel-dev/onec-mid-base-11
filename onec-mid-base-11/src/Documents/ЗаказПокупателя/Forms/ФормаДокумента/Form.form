@@ -211,6 +211,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.HW_13_7_СогласованнаяСкидка</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>HW_13_7_СогласованнаяСкидкаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>HW_13_7_СогласованнаяСкидкаРасширеннаяПодсказка</name>
             <id>175</id>
@@ -2060,6 +2064,11 @@
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Refresh</picture>
     </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПересчитатьТаблицу</name>
+      </handler>
+    </action>
     <representation>TextPicture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
